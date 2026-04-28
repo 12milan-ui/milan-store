@@ -5,14 +5,14 @@ import { Heart, ShoppingBag, Search, X, Plus, Minus } from 'lucide-react';
 import Image from 'next/image';
 
 const allProducts = [
-  { id: 1, name: "Phantom Low", price: 14999, category: "Sneakers", image: "https://picsum.photos/id/1015/600/600", sizes: ["40", "41", "42", "43"] },
-  { id: 2, name: "Velocity Runner", price: 12999, category: "Sneakers", image: "https://picsum.photos/id/1020/600/600", sizes: ["39", "40", "41", "42"] },
-  { id: 3, name: "Italian Leather Oxford", price: 24999, category: "Suits", image: "https://picsum.photos/id/106/600/600", sizes: ["S", "M", "L"] },
-  { id: 4, name: "Shadow Boost", price: 16499, category: "Sneakers", image: "https://picsum.photos/id/1074/600/600", sizes: ["41", "42", "43", "44"] },
-  { id: 5, name: "Midnight Tailored Suit", price: 32999, category: "Suits", image: "https://picsum.photos/id/201/600/600", sizes: ["M", "L", "XL"] },
-  { id: 6, name: "Eclipse Premium", price: 18999, category: "Sneakers", image: "https://picsum.photos/id/133/600/600", sizes: ["40", "41", "42"] },
-  { id: 7, name: "Royal Blue Suit", price: 28999, category: "Suits", image: "https://picsum.photos/id/180/600/600", sizes: ["L", "XL"] },
-  { id: 8, name: "Urban Classic", price: 13999, category: "Sneakers", image: "https://picsum.photos/id/870/600/600", sizes: ["39", "40", "41"] },
+  { id: 1, name: "Phantom Low", price: 14999, category: "Sneakers", image: "/sneaker_phantom.png", sizes: ["40", "41", "42", "43"] },
+  { id: 2, name: "Velocity Runner", price: 12999, category: "Sneakers", image: "/sneaker_velocity.png", sizes: ["39", "40", "41", "42"] },
+  { id: 3, name: "Italian Wool Suit", price: 24999, category: "Suits", image: "/suit-1.png", sizes: ["S", "M", "L"] },
+  { id: 4, name: "Shadow Boost", price: 16499, category: "Sneakers", image: "/sneaker-1.png", sizes: ["41", "42", "43", "44"] },
+  { id: 5, name: "Midnight Tailored Suit", price: 32999, category: "Suits", image: "/suit-1.png", sizes: ["M", "L", "XL"] },
+  { id: 6, name: "Eclipse Premium", price: 18999, category: "Sneakers", image: "/sneaker_velocity.png", sizes: ["40", "41", "42"] },
+  { id: 7, name: "Royal Blue Suit", price: 28999, category: "Suits", image: "/suit-1.png", sizes: ["L", "XL"] },
+  { id: 8, name: "Urban Classic", price: 13999, category: "Sneakers", image: "/sneaker-1.png", sizes: ["39", "40", "41"] },
 ];
 
 type CartItem = {
