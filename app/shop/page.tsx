@@ -111,7 +111,7 @@ export default function ShopPage() {
               transition={{ delay: index * 0.08 }}
               className="group"
             >
-              <div className="relative overflow-hidden rounded-3xl aspect-square bg-neutral-100">
+              <div className="relative overflow-hidden rounded-3xl aspect-square bg-neutral-100 mb-6 glow-card">
                 <Image 
                   src={product.image} 
                   alt={product.name}

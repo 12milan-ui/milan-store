@@ -1,8 +1,10 @@
-@import "tailwindcss";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Futuristic palette */
+  --primary: #0ff; /* cyan */
+  --accent: #ff00ff; /* magenta */
+  --glow-color: rgba(0,255,255,0.6);
 }
 
 @theme inline {
@@ -16,6 +18,10 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    /* Dark mode palette */
+    --primary: #0ff;
+    --accent: #ff00ff;
+    --glow-color: rgba(0,255,255,0.4);
   }
 }
 
@@ -24,3 +30,47 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Glow effect for product cards */
+.glow-card {
+  border: 2px solid var(--primary);
+  border-radius: 1rem;
+  box-shadow: 0 0 12px var(--glow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glow-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 20px var(--glow-color);
+}
+
+/* Pulse effect for glowing cards */
+.glow-card::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 1rem;
+  background: var(--glow-color);
+  opacity: 0;
+  animation: pulse 3s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 0.4; }
+}
+
+/* Anime character decorative element */
+.anime-char {
+  position: fixed;
+  bottom: -10%;
+  right: -10%;
+  width: 30vw;
+  height: auto;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: -1;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-20px) translateX(-20px); }
+}
+

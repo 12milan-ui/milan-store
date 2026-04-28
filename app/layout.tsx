@@ -19,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${inter.className} bg-white text-neutral-900 antialiased`}>
         <Navbar />
+                <img src="/anime_char.svg" className="anime-char" alt="Anime character" />
         {children}
         <Footer />
       </body>
